@@ -83,6 +83,10 @@
         width: 100%;
     }
 
+    .about-me p {
+        font-size: 1rem;
+    }
+
     /* skills */
     .my-skills {
         flex-direction: column;
@@ -92,9 +96,25 @@
         width: 100%;
     }
 
+    .soft dt {
+        font-size: 1.2rem;
+       
+    }
+    
+    .soft dd {
+        font-size: 1rem;
+        width:auto;
+        
+    }
+
     .languages-bar{
         flex-direction: column;
         font-size: large;
+        gap: 0px;
+    }
+
+    .contact-links {
+        gap: 0px;
     }
 
     .contact-links a {
