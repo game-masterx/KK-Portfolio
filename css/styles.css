@@ -1,0 +1,422 @@
+:root {
+    --family: "Oxanium", serif;
+    --primary:#DDD0C8;
+    --secondary:#8C6A5D;
+    --neutral:#323232;
+    --accent:#E07A5F;
+    --bs1: 0 4px 6px rgba(50, 50, 50, 0.1);
+    --bs2: 0 6px 12px rgba(0, 0, 0, 0.3);
+    --bs3: 0 0 12px rgba(224, 122, 95, 0.6);
+    --bs4: 8px 8px 16px #c4b6ae, -8px -8px 16px #f6e6dd;
+}
+
+*{
+    box-sizing: border-box;
+    font-family: var(--family);
+}
+
+html {
+    scroll-behavior: smooth !important;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* common classes*/
+.container {
+    max-width: 1200px;
+    width: 80%;
+    margin: auto;
+}
+
+.btn {
+    padding: 5px;
+    background-color: var(--secondary);
+    border: none;
+    color: black;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    /* display: none; */
+}
+
+.btn-toggler {
+    display: none;
+}
+
+
+
+/* menu */
+header{
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.navbar {
+    width: 100%;
+    height: 100%;
+    background-color: var(--secondary);
+    box-shadow: var(--bs2) ;
+}
+
+
+.navbar-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.active {
+    flex-direction: column;
+}
+
+
+.menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;   
+}
+
+.menu li a {
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 1s;
+    color: black;
+    font-weight: 800;
+    font-size: 1.4rem;
+}
+
+.menu li a:hover {
+    color: goldenrod;
+}
+
+/* home */
+.intro {
+    width: 100%;
+    height: 800px;
+    /* margin-top: 15%; */
+    text-align: center;
+    background: url(../images/1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.intro h1 {
+    font-family: "Great Vibes", serif;
+    margin-top: 15%;
+    font-weight: 700;
+    color: var(--accent);
+    font-size: 3rem;
+}
+
+.intro p {
+    color: #c4b6ae00;
+}
+
+.intro h2 {
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+
+/* about */
+#about {
+    background-color: var(--primary);
+    padding: 50px;
+}
+
+.about-container h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--secondary);
+}
+
+.about-container h3 {
+    font-size: 1.5rem;
+    text-align: center;
+    letter-spacing: 10px;
+    color: black;
+    border-bottom: solid 2px goldenrod;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+}
+
+.profile {
+    /* width: 70%; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    margin-bottom: 30px;
+}
+
+
+
+.about-me{
+    width: 30%;
+    padding: 20px;
+    text-align: left;
+}
+
+.about-me p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.profile h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: var(--secondary);
+}
+
+.about-image img {
+    width: 200px;
+    height: 200px;
+    /* border: 10px solid var(--accent); */
+    border: 10px solid goldenrod;
+    border-radius: 50%;
+}
+
+.list-group dt,dd {
+    font-size: 1.2rem;
+    line-height: 1.9;
+}
+
+
+/* skills */
+
+#skills {
+    background-color: #f2f2f2;
+    padding: 50px;
+    color: black;
+    box-shadow: var(--bs2);
+}
+
+.skills-container h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--secondary);
+}
+
+.skills-container h3 {
+    font-size: 1.2rem;
+    text-align: center;
+    letter-spacing: 2px;
+    color: black;
+    border-bottom: solid 2px goldenrod;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+}
+
+.my-skills h2 {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 700;
+    border-bottom: solid 2px #323232;
+    margin-bottom: 10px;
+    color: var(--secondary);
+}
+
+.hard p {
+    font-size: 1rem;
+}
+
+.hard i, .languages-bar i {
+    color: goldenrod;
+}
+
+.my-skills {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+.soft dt {
+    font-size: 1.2rem;
+   
+}
+
+.soft dd {
+    font-size: 1rem;
+    width: 500px;
+    
+}
+
+.language h2 {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 700;
+    border-bottom: solid 2px #323232;
+    margin-bottom: 10px;
+    color: var(--secondary);
+}
+
+.languages-bar {
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+.languages-bar p {
+    font-size: 1rem;
+}
+
+
+/* Projects */
+
+#projects {
+    background-color: var(--primary);
+    padding: 50px;
+    color: white;
+    box-shadow: var(--bs2);
+}
+
+.projects-container h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--secondary);
+}
+
+.projects-container h3 {
+    font-size: 1.2rem;
+    text-align: center;
+    letter-spacing: 2px;
+    color: black;
+    border-bottom: solid 2px goldenrod;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+.project-cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    grid-gap: 20px;
+}
+
+.project-cards .card {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.project-cards .card .card-front img {
+    width: 100%;
+    border: solid 8px goldenrod;
+    border-radius: 20px;
+}
+
+.project-cards .card .card-front {
+    position: relative;
+}
+
+.project-cards .card .card-back{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 98%;
+    background-color: rgba(0,0,0,0.6);
+    visibility: hidden;
+    transition: all 0.1s;
+    text-align: center;
+    border: 8px solid var(--accent);
+    border-radius: 20px;
+}
+
+.project-cards .card:hover  .card-back {
+    visibility: visible;
+}
+
+.card-back h4 {
+    font-size: 1rem;
+    color: goldenrod;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.card-back .links a {
+    text-decoration: none;
+    color: black;
+    background-color: goldenrod;
+    font-size: 1rem;
+    border: none;
+    padding: 8px;
+    border-radius: 10px ; 
+}
+
+/* contact */
+
+#contact {
+    background: url(../images/3.jpg);
+    background-size: cover;
+    padding: 50px;
+    color: white;
+    box-shadow: var(--bs2);
+}
+
+.contact-bg {
+    background-color: rgba(0, 0, 0, 0.305);
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.contact-container h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.contact-container h3 {
+    font-size: 1.2rem;
+    text-align: center;
+    letter-spacing: 2px;
+    color: white;
+    border-bottom: solid 2px gold;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+.contact-links {
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.contact-links a {
+    background-color: rgba(0, 0, 0, 0.548);
+    padding: 10px;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: gold;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.con-txt {
+    color: white;
+    text-decoration: underline;
+}

@@ -1,0 +1,100 @@
+@media screen and (max-width:990px) {
+
+    /* menu */
+    .navbar {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .btn-toggler {
+        position: relative;
+        display: block;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    .menu.active {
+        display: block;
+        width: 300px;
+    }
+
+
+    /* profile section */
+    .about-me {
+        width: 30%;
+    }
+
+    .about-me p{
+        font-size: 0.8rem;
+    }
+
+    .profile h2 {
+        font-size: 2rem;
+    }
+
+    .about-image img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .list-group dt,dd {
+        font-size: 0.8rem;
+        line-height: 1.3;
+    }
+
+    /* skills */
+    .soft {
+        width: 30%;
+    }
+
+    .soft dt {
+        font-size: 1rem;
+       
+    }
+    
+    .soft dd {
+        font-size: 0.7rem;
+        width:auto;
+        
+    }
+
+    .languages-bar p {
+        font-size: 0.8rem;
+    }
+
+    /* contacts */
+    .contact-links {
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+
+    /* profile */
+    .profile {
+        flex-direction: column;
+    }
+
+    .about-me {
+        width: 100%;
+    }
+
+    /* skills */
+    .my-skills {
+        flex-direction: column;
+    }
+
+    .soft {
+        width: 100%;
+    }
+
+    .languages-bar{
+        flex-direction: column;
+        font-size: large;
+    }
+
+}
