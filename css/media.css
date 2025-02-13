@@ -97,4 +97,8 @@
         font-size: large;
     }
 
+    .contact-links a {
+        font-size: 0.8rem;
+    }
+
 }
