@@ -107,6 +107,10 @@
         
     }
 
+    .social-links {
+        font-size: 1.5rem;
+    }
+
     .languages-bar{
         flex-direction: column;
         font-size: large;
